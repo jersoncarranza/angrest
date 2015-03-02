@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Bootply.com - Bootstrap 3 Tabs + left,right,bottom</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico">
+        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+
+
+
+
+
+
+
+
+
+
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            /* custom inclusion of right, left and below tabs */.tabs-below > .nav-tabs,.tabs-right > .nav-tabs,.tabs-left > .nav-tabs {  border-bottom: 0;}.tab-content > .tab-pane,.pill-content > .pill-pane {  display: none;}.tab-content > .active,.pill-content > .active {  display: block;}.tabs-below > .nav-tabs {  border-top: 1px solid #ddd;}.tabs-below > .nav-tabs > li {  margin-top: -1px;  margin-bottom: 0;}.tabs-below > .nav-tabs > li > a {  -webkit-border-radius: 0 0 4px 4px;     -moz-border-radius: 0 0 4px 4px;          border-radius: 0 0 4px 4px;}.tabs-below > .nav-tabs > li > a:hover,.tabs-below > .nav-tabs > li > a:focus {  border-top-color: #ddd;  border-bottom-color: transparent;}.tabs-below > .nav-tabs > .active > a,.tabs-below > .nav-tabs > .active > a:hover,.tabs-below > .nav-tabs > .active > a:focus {  border-color: transparent #ddd #ddd #ddd;}.tabs-left > .nav-tabs > li,.tabs-right > .nav-tabs > li {  float: none;}.tabs-left > .nav-tabs > li > a,.tabs-right > .nav-tabs > li > a {  min-width: 74px;  margin-right: 0;  margin-bottom: 3px;}.tabs-left > .nav-tabs {  float: left;  margin-right: 19px;  border-right: 1px solid #ddd;}.tabs-left > .nav-tabs > li > a {  margin-right: -1px;  -webkit-border-radius: 4px 0 0 4px;     -moz-border-radius: 4px 0 0 4px;          border-radius: 4px 0 0 4px;}.tabs-left > .nav-tabs > li > a:hover,.tabs-left > .nav-tabs > li > a:focus {  border-color: #eeeeee #dddddd #eeeeee #eeeeee;}.tabs-left > .nav-tabs .active > a,.tabs-left > .nav-tabs .active > a:hover,.tabs-left > .nav-tabs .active > a:focus {  border-color: #ddd transparent #ddd #ddd;  *border-right-color: #ffffff;}.tabs-right > .nav-tabs {  float: right;  margin-left: 19px;  border-left: 1px solid #ddd;}.tabs-right > .nav-tabs > li > a {  margin-left: -1px;  -webkit-border-radius: 0 4px 4px 0;     -moz-border-radius: 0 4px 4px 0;          border-radius: 0 4px 4px 0;}.tabs-right > .nav-tabs > li > a:hover,.tabs-right > .nav-tabs > li > a:focus {  border-color: #eeeeee #eeeeee #eeeeee #dddddd;}.tabs-right > .nav-tabs .active > a,.tabs-right > .nav-tabs .active > a:hover,.tabs-right > .nav-tabs .active > a:focus {  border-color: #ddd #ddd #ddd transparent;  *border-left-color: #ffffff;}
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                    <h3>Tabs</h3>
+                    <a href="#myModal" role="button" class="btn btn-default" data-toggle="modal">Launch demo modal</a>
+                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            	<div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h3 id="myModalLabel">Modal header</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body…</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <button class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tabs -->        
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#one" data-toggle="tab">One</a></li>
+                            <li><a href="#two" data-toggle="tab">Two</a></li>
+                            <li><a href="#twee" data-toggle="tab">Twee</a></li>
+                        </ul>          <div class="tab-content">            <div class="tab-pane active" id="one">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.             Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>            <div class="tab-pane" id="two">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.             Aliquam in felis sit amet augue.</div>            <div class="tab-pane" id="twee">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.             Quisque mauris augue, molestie tincidunt condimentum vitae.</div>           </div>        </div>        <!-- /tabs -->    </div>    <div class="col-md-6"><h3>Tabs -below</h3>              	      <!-- tabs bottom -->      <div class="tabbable tabs-below">        <div class="tab-content">         <div class="tab-pane active" id="one_">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>         <div class="tab-pane" id="two_">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.          Aliquam in felis sit amet augue.</div>         <div class="tab-pane" id="twee_">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae. </div>        </div>        <ul class="nav nav-tabs">          <li><a href="#one_" data-toggle="tab">One</a></li>          <li><a href="#two_" data-toggle="tab">Two</a></li>          <li><a href="#twee_" data-toggle="tab">Twee</a></li>        </ul>      </div>      <!-- /tabs -->              </div>  </div><!-- /row -->  <div class="row">        <div class="col-md-6"><h3>Tabs -left</h3>          	      <!-- tabs left -->      <div class="tabbable tabs-left">        <ul class="nav nav-tabs">          <li><a href="#a" data-toggle="tab">One</a></li>          <li class="active"><a href="#b" data-toggle="tab">Two</a></li>          <li><a href="#c" data-toggle="tab">Twee</a></li>        </ul>        <div class="tab-content">         <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>         <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.          Aliquam in felis sit amet augue.</div>         <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae. </div>        </div>      </div>      <!-- /tabs -->          </div>         <div class="col-md-6"><h3>Tabs -right</h3>          	      <!-- tabs right -->      <div class="tabbable tabs-right">        <ul class="nav nav-tabs">          <li class="active"><a href="#1" data-toggle="tab">One</a></li>          <li><a href="#2" data-toggle="tab">Two</a></li>          <li><a href="#3" data-toggle="tab">Twee</a></li>        </ul>        <div class="tab-content">         <div class="tab-pane active" id="1">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>         <div class="tab-pane" id="2">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.          Aliquam in felis sit amet augue.</div>         <div class="tab-pane" id="3">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.          Quisque mauris augue, molestie tincidunt condimentum vitae. </div>        </div>      </div>      <!-- /tabs -->          </div>      </div><!-- /row --></div>      <hr>
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+        
+        <!-- JavaScript jQuery code from Bootply.com editor  -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            
+        
+        });
+        
+        </script>
+        
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-40413119-1', 'bootply.com');
+          ga('send', 'pageview');
+        </script>
+        
+    </body>
+</html>
