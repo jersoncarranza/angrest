@@ -11,9 +11,9 @@
 	text-align: center;
 	width: 70%;
 }
-
 .materia{
 	height: 42px;
+	margin-bottom: 1em;
 	width: 70%;
 }
 @media screen and (max-width: 360px){
