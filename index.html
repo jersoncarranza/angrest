@@ -9,6 +9,7 @@
      <link href="./css/estilos.css" rel="stylesheet">
   </head>
 <body>
+  <!-- header -->
   <div class="navbar navbar-inverse navbar-fixed-top nav-arr" role="navigation">
       <div class="container-fluid">
           <div class="navbar-header">
@@ -22,8 +23,9 @@
           </div>
       </div>
   </div>
+  <!-- /header -->
   
-
+  <!-- tabs -->
   <div class="container container-arr">
     <div class="row">
       <div class="">
@@ -50,14 +52,30 @@
                 <div  ng-show="tabs.tab === 6">Datos del Sexto Semestre</div>
                 <div  ng-show="tabs.tab === 7">Datos del Séptimo Semestre</div>
                 <div  ng-show="tabs.tab === 8">Datos del Octavo Semestre</div>
-                <div  ng-show="tabs.tab === 9">Datos del Noveno Semestre</div>
+                <div  ng-show="tabs.tab === 9">Datos del Noveno Semestre
+                <!-- materia 1 -->
+                   <!-- comments -->
+                  <div ng-controller="CommentsController as cmtsCtrl" >
+                    <button class="materia btn btn-primary" ng-hide="cmtsCtrl.show" ng-click="cmtsCtrl.toggle()">Tecnicas
+                      <span class="badge">{{cmtsCtrl.comments.length}}</span>
+                    </button>
+                    <div class="panel panel-primary alinear" ng-show="cmtsCtrl.show">
+                      <div class="panel-heading">
+                        <h1 class="panel-title">Contenido de Tecnicas <button class="close pull-right" ng-click="cmtsCtrl.toggle()">&times;</button></h1>
+                      </div>
+                      <div class="panel-body"></div>
+                    </div>
+                  </div>
+                  <!-- /comments -->
+              <!-- /materia 1 -->
+                </div>
                
             </div>      
         </div><!-- /tabs -->          
       </div> 
     </div> 
   </div> 
-
+  <!-- /tabs -->
 
 
 
